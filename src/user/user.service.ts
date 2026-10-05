@@ -40,8 +40,8 @@ export class UserService {
     this.logger.log(`Creating user`);
 
     const newUser: User = {
-      ...dto,
       id: this.users.length + 1,
+      ...dto,
     };
     this.users.push(newUser);
 
